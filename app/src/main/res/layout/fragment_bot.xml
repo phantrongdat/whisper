@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <info.trongdat.whisperapp.views.libs.slackloadingview.SlackLoadingView
+    android:id="@+id/loading_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layoutData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/robot_chat_simsim" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-40dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Language: Vietnamese"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cbxLBW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:checked="true"
+                android:text="Lock bad word"
+                android:textSize="16dp"
+                app:buttonTint="@color/colorPrimary" />
+
+            <CheckBox
+                android:id="@+id/cbxSaveConv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save conversation"
+                app:buttonTint="@color/colorPrimary"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <info.trongdat.whisperapp.views.libs.FloatingTextButton
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:floating_background_color="?attr/colorPrimary"
+            app:floating_icon="@drawable/ic_simsimi"
+            app:floating_title="Lest Go!"
+            app:floating_title_color="@android:color/white"
+            app:layout_behavior="info.trongdat.whisperapp.views.libs.SnackbarBehavior" />
+
+    </LinearLayout>
+</LinearLayout>

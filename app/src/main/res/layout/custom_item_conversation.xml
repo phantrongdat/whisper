@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogRootLayout"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/dialogContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            app:civ_border_color="#ffffff"
+            app:civ_border_width="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@+id/imgAvatar"
+            android:layout_toLeftOf="@+id/txtDate"
+            android:layout_toRightOf="@+id/imgAvatar"
+            android:layout_toStartOf="@+id/txtDate"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/textDark"
+            android:textSize="18dp" />
+
+        <com.github.curioustechizen.ago.RelativeTimeTextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgAvatar"
+            android:layout_toRightOf="@+id/imgAvatar">
+
+
+            <TextView
+                android:id="@+id/txtLastMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:singleLine="true"
+                android:text="" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dialogUnreadBubble"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignEnd="@+id/imgAvatar"
+            android:layout_alignRight="@+id/imgAvatar"
+            android:layout_alignTop="@+id/imgAvatar"
+            android:background="@drawable/bubble_circle"
+            android:ellipsize="end"
+            android:gravity="center" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

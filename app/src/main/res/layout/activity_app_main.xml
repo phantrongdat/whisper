@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="info.trongdat.whisperapp.AppMain">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/spaceNavigation"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="-25dp"
+        android:layout_alignParentStart="true"></FrameLayout>
+
+    <info.trongdat.whisperapp.views.libs.spacenavigation.SpaceNavigationView
+        android:id="@+id/spaceNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:active_centre_button_icon_color="#fff"
+        app:active_item_color="@color/colorPrimaryDark"
+        app:centre_button_color="@color/colorPrimaryDark"
+        app:inactive_centre_button_icon_color="#FFE4E4E4"
+        app:inactive_item_color="#787878"
+        app:space_background_color="@color/space_background"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size"
+        app:space_item_icon_size="@dimen/space_item_icon_default_size"
+        app:space_item_text_size="@dimen/space_item_text_default_size" />
+
+</RelativeLayout>

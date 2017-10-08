@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CirCleRefreshLayout">
+        <attr name="AniBackColor" format="color" />
+        <attr name="AniForeColor" format="color" />
+        <attr name="CircleSmaller" format="integer" />
+
+    </declare-styleable>
+
+    <declare-styleable name="SpaceNavigationView">
+        <attr name="space_item_icon_size" format="dimension" />
+        <attr name="space_item_icon_only_size" format="dimension" />
+        <attr name="space_item_text_size" format="dimension" />
+        <attr name="space_background_color" format="color" />
+        <attr name="centre_button_color" format="color" />
+        <attr name="active_item_color" format="color" />
+        <attr name="inactive_item_color" format="color" />
+        <attr name="centre_button_icon" format="reference" />
+        <attr name="active_centre_button_icon_color" format="color" />
+        <attr name="inactive_centre_button_icon_color" format="color" />
+        <attr name="active_centre_button_background_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FloatingTextButton">
+        <attr name="floating_icon" format="reference" />
+        <attr name="floating_title" format="string|reference" />
+        <attr name="floating_title_color" format="reference|color" />
+        <attr name="floating_background_color" format="reference|color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ChipView">
+        <attr name="label" format="string" />
+        <attr name="labelColor" format="color" />
+        <attr name="hasAvatarIcon" format="boolean" />
+        <attr name="avatarIcon" format="reference" />
+        <attr name="deletable" format="boolean" />
+        <attr name="deleteIcon" format="reference" />
+        <attr name="deleteIconColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipsInput">
+        <attr name="hint" format="string" />
+        <attr name="hintColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="maxRows" format="integer" />
+        <attr name="chip_labelColor" format="color" />
+        <attr name="chip_hasAvatarIcon" format="boolean" />
+        <attr name="chip_deletable" format="boolean" />
+        <attr name="chip_deleteIcon" format="reference" />
+        <attr name="chip_deleteIconColor" format="color" />
+        <attr name="chip_backgroundColor" format="color" />
+        <attr name="showChipDetailed" format="boolean" />
+        <attr name="chip_detailed_textColor" format="color" />
+        <attr name="chip_detailed_backgroundColor" format="color" />
+        <attr name="chip_detailed_deleteIconColor" format="color" />
+        <attr name="filterable_list_backgroundColor" format="color" />
+        <attr name="filterable_list_textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollViewMaxHeight">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+</resources>

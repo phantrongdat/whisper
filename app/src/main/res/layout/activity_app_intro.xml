@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.wangyuwei.particleview.ParticleView
+            android:id="@+id/particleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            pv:pv_background_color="@color/colorPrimary"
+            pv:pv_particle_text="Whisper"
+            pv:pv_particle_text_size="50sp"
+            pv:pv_spread_anim_time="100"
+            pv:pv_text_anim_time="1000"
+            pv:pv_text_color="#ebffef" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="-30dp"
+            android:layout_marginTop="-80dp"
+            android:background="@drawable/app_icon1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:text="© 2017 Beta version"
+            android:textColor="@color/white" />
+    </FrameLayout>
+</LinearLayout>

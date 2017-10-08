@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7dbb21</color>
+    <color name="colorPrimaryDark">#ff6ea51d</color>
+    <!--00695C-->
+    <color name="colorAccent2">#ff6ea51d</color>
+    <color name="colorAccent">#c9491e</color>
+    <color name="background">#eaeaea</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="text">#b323291a</color>
+    <color name="textDark">#d923291a</color>
+    <color name="icon">#ababab</color>
+    <color name="row_message_1">#dedddd</color>
+    <color name="row_message_2">#ff6ea51d</color>
+    <color name="line">#e3d6d6d6</color>
+    <color name="azure">#ff007fff</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="bright_pink">#ffff007f</color>
+    <color name="chartreuse">#ff7fff00</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="cyan">#ff00ffff</color>
+    <color name="green">#ff00ff00</color>
+    <color name="magenta">#ffff00ff</color>
+    <color name="orange">#ffff7f00</color>
+    <color name="purple">#ff512da8</color>
+    <color name="red">#ffff0000</color>
+    <color name="textBlack">#ff000000</color>
+    <color name="textColorPrimary">#606ea51d</color>
+    <color name="textColor_dialog">#ff3498db</color>
+    <color name="textStatusColor">#ff0000ff</color>
+    <color name="violet">#ff7f00ff</color>
+    <color name="white">#ffffffff</color>
+    <color name="space_background_color">#757575</color>
+    <color name="space_transparent">#00000000</color>
+    <color name="space_white">#ffffff</color>
+    <color name="space_default_color">#2A3137</color>
+    <color name="centre_button_color">#4285F4</color>
+    <color name="default_inactive_item_color">#9e9e9e</color>
+    <color name="default_active_item_color">#262626</color>
+    <color name="selected_item_color">#3fffffff</color>
+    <color name="badge_background_color">#f44336</color>
+    <color name="white_with_alpha">#bfffffff</color>
+    <color name="colorBackgroundHighlightWhite">#8dffffff</color>
+    <color name="space_background">#f1f1f1</color>
+
+    <color name="colorChipViewBackground">#E0E0E0</color>
+    <color name="chips_opened_bg">#009688</color>
+    <color name="colorCloseChip">#ababab</color>
+    <color name="white_transparency">#b9ffffff</color>
+</resources>

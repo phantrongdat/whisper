@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:srcCompat="@drawable/ic_list_icon_24dp" />-->
+
+        <info.trongdat.whisperapp.views.libs.materialchips.ChipsInput
+            android:id="@+id/chips_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            app:chip_deletable="true"
+            app:chip_deleteIconColor="@color/white"
+            app:chip_detailed_backgroundColor="@color/colorPrimary"
+            app:chip_detailed_deleteIconColor="@color/white"
+            app:chip_detailed_textColor="@color/white"
+            app:chip_hasAvatarIcon="true"
+            app:hint="Type a name or group"
+            app:hintColor="@color/icon"
+            app:maxRows="3"
+            android:textSize="16dp"
+            app:showChipDetailed="true"
+            app:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+
+    <!--<info.trongdat.whisperapp.views.libs.slackloadingview.SlackLoadingView-->
+    <!--android:id="@+id/loadingView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:background="@color/white" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/line"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edtConversationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_transparent"
+            android:hint="Title for conversation"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/icon"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/line"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnAddAction"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_playlist_add_primary_24dp" />
+
+        <io.github.rockerhieu.emojicon.EmojiconEditText
+            android:id="@+id/edtMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="8"
+            android:background="@color/color_transparent"
+            android:gravity="center_vertical"
+            android:hint="Type a message"
+            android:inputType="textMultiLine"
+            android:paddingLeft="5dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/text"
+            android:textColorHint="@color/icon"
+            android:textSize="16dp"
+            emojicon:emojiconAlignment="baseline" />
+
+        <ImageButton
+            android:id="@+id/btnAddEmojicon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_insert_emoticon_green_24dp" />
+
+        <ImageButton
+            android:id="@+id/btnSendMessage"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_send_40dp"
+            android:clickable="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:visibility="gone" />
+</LinearLayout>
